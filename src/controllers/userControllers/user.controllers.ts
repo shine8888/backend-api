@@ -113,7 +113,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 };
 
 /**
- * Get refresh token when access token is expired
+ * Get new access token when the old access token is expired
  *
  * @param {Request} req
  * @param {Response} res
@@ -172,7 +172,7 @@ export const getAccessToken = async (
 };
 
 /**
- * This function for handle the process of trading token
+ * This function for handle the process of deposit
  *
  * @param {Request} req
  * @param {Response} res
@@ -219,7 +219,7 @@ export const deposit = async (req: Request, res: Response): Promise<void> => {
 };
 
 /**
- * This function for handle the process of trading token
+ * This function for handle the process of withdrawal
  *
  * @param {Request} req
  * @param {Response} res
@@ -273,7 +273,7 @@ export const withdrawal = async (
 };
 
 /**
- * This function for handle the process of trading token
+ * This function for get portfolio
  *
  * @param {Request} req
  * @param {Response} res
