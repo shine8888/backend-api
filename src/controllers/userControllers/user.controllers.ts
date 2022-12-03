@@ -205,7 +205,11 @@ export const deposit = async (req: Request, res: Response): Promise<void> => {
     // Commit the session transaction
     await session.commitTransaction();
 
-    successHandler(res, httpStatus.OK, updatedUser);
+    successHandler(
+      res,
+      httpStatus.OK,
+      pick(updatedUser, ['_id', 'name', 'email', 'balance'])
+    );
   } catch (error) {
     await session.commitTransaction();
   } finally {
@@ -255,7 +259,11 @@ export const withdrawal = async (
     // Commit the session transaction
     await session.commitTransaction();
 
-    successHandler(res, httpStatus.OK, updatedUser);
+    successHandler(
+      res,
+      httpStatus.OK,
+      pick(updatedUser, ['_id', 'name', 'email', 'balance'])
+    );
   } catch (error) {
     await session.commitTransaction();
   } finally {
@@ -277,8 +285,6 @@ export const getMyPortfolios = async (
 ): Promise<void> => {
   // Get all data from req body
   const { userId } = req.params;
-
-  console.log(userId, ':: check userId');
 
   // Query the user
   const user = await User.findOne({ _id: userId }).lean();
