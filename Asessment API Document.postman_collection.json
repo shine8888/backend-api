@@ -1,0 +1,682 @@
+{
+	"info": {
+		"_postman_id": "180b5446-bca9-46ae-94a2-52a3e3ab7c76",
+		"name": "Asessment API Document",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12088625"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Quang Kieu\",\n    \"email\": \"quangkieu889@gmail.com\",\n    \"password\": \"QuangKieu123@@\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_LOCAL}}/api/v1/users/register",
+					"host": [
+						"{{BASE_URL_LOCAL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Quang Kieu\",\n    \"email\": \"kieuquang123@gmail.com\",\n    \"password\": \"QuangKieu123@@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_LOCAL}}/api/v1/users/register",
+							"host": [
+								"{{BASE_URL_LOCAL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b5-Nb/i837ne+o84lg/dWu2rcArBp0\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3A0ETbmscYGUfMuFip6s0y-lodOwbpeTBL.NWWr4Jur3NugG7g7g5UOuQHhA31cFcZF3OOzlYPZMTc; Path=/; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 19:13:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Standard response for successful HTTP requests.\",\n    \"data\": {\n        \"_id\": \"638a4e743bcf3cfb69562023\",\n        \"name\": \"Quang Kieu\",\n        \"email\": \"kieuquang123@gmail.com\",\n        \"balance\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"quangkieu889@gmail.com\",\n    \"password\": \"QuangKieu123@@\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_LOCAL}}/api/v1/users/login",
+					"host": [
+						"{{BASE_URL_LOCAL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"kieuquang123@gmail.com\",\n    \"password\": \"QuangKieu123@@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_LOCAL}}/api/v1/users/login",
+							"host": [
+								"{{BASE_URL_LOCAL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "579"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"243-eMwY7VctNFu1wQF5GytyKWbRb7k\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 19:15:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Standard response for successful HTTP requests.\",\n    \"data\": {\n        \"refreshToken\": \"42b00e7a-793f-4d7b-885c-a8b8526d0ed1\",\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiI2MDJhYTY2ZGUzOTQxMDc2YzE0NTg5ZDc0ZTNhMTgwMTEzMDJhMGZjYzUxZTQ2NzQ1ODlhY2U5Mzk0OGEzYzcxNGQ3NDhmNjE1OGIwZmQ2MWRkMTAwMGMxN2Q2ZjVmODYyYTIzNDk2NTZmNGUxOGQ2MmUxYmJjNDlmYzU3OTdmYiIsImVtYWlsIjoia2lldXF1YW5nMTIzQGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwiaWF0IjoxNjcwMDA4NTQ2LCJleHAiOjE2NzAwOTQ5NDZ9.VOfM0QkXkneQZV4QqwRyLAoySDfFszWyNDsEeV4IP_4\",\n        \"userId\": \"638a4e743bcf3cfb69562023\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Generate Access Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refreshToken\": \"d65faf06-3275-4afa-b93e-74565e2bf9d2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_LOCAL}}/api/v1/users/access-token",
+					"host": [
+						"{{BASE_URL_LOCAL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"access-token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Generate Access Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refreshToken\": \"d65faf06-3275-4afa-b93e-74565e2bf9d2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_LOCAL}}/api/v1/users/access-token",
+							"host": [
+								"{{BASE_URL_LOCAL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"access-token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "493"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ed-Nhpik/IhjfpoytE4QHE3ivl0TSM\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3ADVFn7A44uX70wb1XFbYczrM6LjRJusp6.rpRrXukW6gH0gUcGVtt%2BJWIKcWvrzvCSlKq8j1NSAlM; Path=/; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 19:29:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Standard response for successful HTTP requests.\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiIzYTI2OTljZTA0ODc4OTQ2OTI4YWIzN2NmZDRkMjNhODhlYjUzMTAyN2VlZGYyMjhkMDYyNzEyMDRjMjhlZGVlMjZkZTU5ZjA4ZmYwODNmNDkwYTY5OTllNzczMGMxYzI4MjI0MDE3N2YyMzY3YmQ4YWUyNzRlYjYyOThjNDc2NyIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTRlNzQzYmNmM2NmYjY5NTYyMDIzIiwiaWF0IjoxNjcwMDA5MzU3LCJleHAiOjE2NzAwOTU3NTd9.ppbXZKH8fRJjn1rz9n3Oyp6H0ymt1HGXCeNf_V0Kwl8\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiI0ZTJhMjdmNWZmYTRlZmNiNDljZTk0ZjY2Y2I4ZGEzNjU2YzM4NzU2Y2Y3NmYyNTVmZDBjMTQ1ZTJlMGQzNDQ5NThkY2QzYWM5NjdmOWY0ZDRlOGZlM2I5OGIwMWE2NzA0NmI2YmMwYmZlMjViNzljY2M5YWU1MTQwZWYwYjhjMyIsImVtYWlsIjoicXVhbmdraWV1ODg5QGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU1ZWI3M2Y5YWRjY2RjOWFhNWJkIiwiaWF0IjoxNjcwMDM4NTY0LCJleHAiOjE2NzAxMjQ5NjR9.Fcs5XXdTLofgj3HfNB9wxWtXpOm19t634BsDgtsXZnw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 1000,\n    \"userId\": \"638a55eb73f9adccdc9aa5bd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_LOCAL}}/api/v1/users/deposit",
+					"host": [
+						"{{BASE_URL_LOCAL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"deposit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Deposit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiJhMzg1ZmY3MmY3NTMzYTQxN2E0MzVhZDc3NTFkNDlmZjc1NDIyMjQwZTRmNDA0Y2Y5ZmE3MWVjOTIyMTBmZjJiM2EwMWE2N2IzYjlhMzFlOGY1ZWJkNTk5Yzc0MjkyOGIyMjQ0ZDYxOGM5YTAzMjg1ZTg1NjIzNmNlOWFmNzlhNiIsImVtYWlsIjoia2lldXF1YW5nMTIzQGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU0OGExMTYyMWMxMDI2YmU4NzNjIiwiaWF0IjoxNjcwMDEwMDAxLCJleHAiOjE2NzAwOTY0MDF9.gjQg-m_fn5k0eVAEKpRrFwBL7UiBEhi5zRZVpbazEO8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 1000,\n    \"userId\": \"638a55eb73f9adccdc9aa5bd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_LOCAL}}/api/v1/users/deposit",
+							"host": [
+								"{{BASE_URL_LOCAL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"deposit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "344"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"158-zoE84XaGbsIbmr+8wFpFCFLb0u0\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 19:45:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Standard response for successful HTTP requests.\",\n    \"data\": {\n        \"_id\": \"638a55eb73f9adccdc9aa5bd\",\n        \"name\": \"Quang Kieu\",\n        \"password\": \"$2a$10$tok2ad9JNUD.HfoO1FXBrehz5xbsNRX62PdQmYY0vXuVfix4TzRu6\",\n        \"email\": \"quangkieu889@gmail.com\",\n        \"balance\": 1000,\n        \"createdAt\": \"2022-12-02T19:45:47.365Z\",\n        \"updatedAt\": \"2022-12-02T19:45:59.590Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Withdrawl",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiJhMzg1ZmY3MmY3NTMzYTQxN2E0MzVhZDc3NTFkNDlmZjc1NDIyMjQwZTRmNDA0Y2Y5ZmE3MWVjOTIyMTBmZjJiM2EwMWE2N2IzYjlhMzFlOGY1ZWJkNTk5Yzc0MjkyOGIyMjQ0ZDYxOGM5YTAzMjg1ZTg1NjIzNmNlOWFmNzlhNiIsImVtYWlsIjoia2lldXF1YW5nMTIzQGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU0OGExMTYyMWMxMDI2YmU4NzNjIiwiaWF0IjoxNjcwMDEwMDAxLCJleHAiOjE2NzAwOTY0MDF9.gjQg-m_fn5k0eVAEKpRrFwBL7UiBEhi5zRZVpbazEO8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\": 1.2,\n    \"userId\": \"638a55eb73f9adccdc9aa5bd\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL_LOCAL}}/api/v1/users/withdrawl",
+					"host": [
+						"{{BASE_URL_LOCAL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"withdrawl"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Withdrawl",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiJhMzg1ZmY3MmY3NTMzYTQxN2E0MzVhZDc3NTFkNDlmZjc1NDIyMjQwZTRmNDA0Y2Y5ZmE3MWVjOTIyMTBmZjJiM2EwMWE2N2IzYjlhMzFlOGY1ZWJkNTk5Yzc0MjkyOGIyMjQ0ZDYxOGM5YTAzMjg1ZTg1NjIzNmNlOWFmNzlhNiIsImVtYWlsIjoia2lldXF1YW5nMTIzQGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU0OGExMTYyMWMxMDI2YmU4NzNjIiwiaWF0IjoxNjcwMDEwMDAxLCJleHAiOjE2NzAwOTY0MDF9.gjQg-m_fn5k0eVAEKpRrFwBL7UiBEhi5zRZVpbazEO8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 1000,\n    \"userId\": \"638a55eb73f9adccdc9aa5bd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL_LOCAL}}/api/v1/users/withdrawl",
+							"host": [
+								"{{BASE_URL_LOCAL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"withdrawl"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "341"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"155-GsqEXT/0PCvNzXL+Sy9snDky8H8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 19:49:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Standard response for successful HTTP requests.\",\n    \"data\": {\n        \"_id\": \"638a55eb73f9adccdc9aa5bd\",\n        \"name\": \"Quang Kieu\",\n        \"password\": \"$2a$10$tok2ad9JNUD.HfoO1FXBrehz5xbsNRX62PdQmYY0vXuVfix4TzRu6\",\n        \"email\": \"quangkieu889@gmail.com\",\n        \"balance\": 0,\n        \"createdAt\": \"2022-12-02T19:45:47.365Z\",\n        \"updatedAt\": \"2022-12-02T19:49:03.226Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "My Portfolio",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiI0ZTJhMjdmNWZmYTRlZmNiNDljZTk0ZjY2Y2I4ZGEzNjU2YzM4NzU2Y2Y3NmYyNTVmZDBjMTQ1ZTJlMGQzNDQ5NThkY2QzYWM5NjdmOWY0ZDRlOGZlM2I5OGIwMWE2NzA0NmI2YmMwYmZlMjViNzljY2M5YWU1MTQwZWYwYjhjMyIsImVtYWlsIjoicXVhbmdraWV1ODg5QGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU1ZWI3M2Y5YWRjY2RjOWFhNWJkIiwiaWF0IjoxNjcwMDM4NTY0LCJleHAiOjE2NzAxMjQ5NjR9.Fcs5XXdTLofgj3HfNB9wxWtXpOm19t634BsDgtsXZnw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BASE_URL_LOCAL}}/api/v1/users/638a55eb73f9adccdc9aa5bd/portfolio",
+					"host": [
+						"{{BASE_URL_LOCAL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"638a55eb73f9adccdc9aa5bd",
+						"portfolio"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiI0ZTJhMjdmNWZmYTRlZmNiNDljZTk0ZjY2Y2I4ZGEzNjU2YzM4NzU2Y2Y3NmYyNTVmZDBjMTQ1ZTJlMGQzNDQ5NThkY2QzYWM5NjdmOWY0ZDRlOGZlM2I5OGIwMWE2NzA0NmI2YmMwYmZlMjViNzljY2M5YWU1MTQwZWYwYjhjMyIsImVtYWlsIjoicXVhbmdraWV1ODg5QGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU1ZWI3M2Y5YWRjY2RjOWFhNWJkIiwiaWF0IjoxNjcwMDM4NTY0LCJleHAiOjE2NzAxMjQ5NjR9.Fcs5XXdTLofgj3HfNB9wxWtXpOm19t634BsDgtsXZnw",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "My Portfolio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiI0ZTJhMjdmNWZmYTRlZmNiNDljZTk0ZjY2Y2I4ZGEzNjU2YzM4NzU2Y2Y3NmYyNTVmZDBjMTQ1ZTJlMGQzNDQ5NThkY2QzYWM5NjdmOWY0ZDRlOGZlM2I5OGIwMWE2NzA0NmI2YmMwYmZlMjViNzljY2M5YWU1MTQwZWYwYjhjMyIsImVtYWlsIjoicXVhbmdraWV1ODg5QGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU1ZWI3M2Y5YWRjY2RjOWFhNWJkIiwiaWF0IjoxNjcwMDM4NTY0LCJleHAiOjE2NzAxMjQ5NjR9.Fcs5XXdTLofgj3HfNB9wxWtXpOm19t634BsDgtsXZnw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL_LOCAL}}/api/v1/users/638a55eb73f9adccdc9aa5bd/portfolio",
+							"host": [
+								"{{BASE_URL_LOCAL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"638a55eb73f9adccdc9aa5bd",
+								"portfolio"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyYW5kb21LZXkiOiI0ZTJhMjdmNWZmYTRlZmNiNDljZTk0ZjY2Y2I4ZGEzNjU2YzM4NzU2Y2Y3NmYyNTVmZDBjMTQ1ZTJlMGQzNDQ5NThkY2QzYWM5NjdmOWY0ZDRlOGZlM2I5OGIwMWE2NzA0NmI2YmMwYmZlMjViNzljY2M5YWU1MTQwZWYwYjhjMyIsImVtYWlsIjoicXVhbmdraWV1ODg5QGdtYWlsLmNvbSIsIm5hbWUiOiJRdWFuZyBLaWV1IiwidXNlcklkIjoiNjM4YTU1ZWI3M2Y5YWRjY2RjOWFhNWJkIiwiaWF0IjoxNjcwMDM4NTY0LCJleHAiOjE2NzAxMjQ5NjR9.Fcs5XXdTLofgj3HfNB9wxWtXpOm19t634BsDgtsXZnw",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "185"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b9-6iQ6godUO655k7cQy6odRKiZtQ8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 03 Dec 2022 03:43:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Standard response for successful HTTP requests.\",\n    \"data\": {\n        \"_id\": \"638a55eb73f9adccdc9aa5bd\",\n        \"name\": \"Quang Kieu\",\n        \"email\": \"quangkieu889@gmail.com\",\n        \"balance\": 998.8\n    }\n}"
+				}
+			]
+		}
+	]
+}
