@@ -14,6 +14,7 @@ import path from 'path';
 import dotenv from 'dotenv';
 import {
   BALANCE_NOT_ENOUGH,
+  DEPOSIT_ERROR,
   GETTING_TOKEN_ERROR,
   LOGIN_ERROR,
   REFRESH_TOKEN_EXPIRED,
@@ -22,6 +23,7 @@ import {
   SERVER_ERROR,
   USER_EXISTED,
   USER_NOT_EXISTED,
+  WITHDRAWL_ERROR,
 } from '../../constants/Message';
 dotenv.config({ path: path.join(__dirname, '../../.env') });
 
@@ -212,6 +214,7 @@ export const deposit = async (req: Request, res: Response): Promise<void> => {
     );
   } catch (error) {
     await session.abortTransaction();
+    errorHandler({ message: DEPOSIT_ERROR }, res);
   } finally {
     // End the session
     session.endSession();
@@ -266,6 +269,7 @@ export const withdrawal = async (
     );
   } catch (error) {
     await session.abortTransaction();
+    errorHandler({ message: WITHDRAWL_ERROR }, res);
   } finally {
     // End the session
     session.endSession();
