@@ -211,7 +211,7 @@ export const deposit = async (req: Request, res: Response): Promise<void> => {
       pick(updatedUser, ['_id', 'name', 'email', 'balance'])
     );
   } catch (error) {
-    await session.commitTransaction();
+    await session.abortTransaction();
   } finally {
     // End the session
     session.endSession();
@@ -265,7 +265,7 @@ export const withdrawal = async (
       pick(updatedUser, ['_id', 'name', 'email', 'balance'])
     );
   } catch (error) {
-    await session.commitTransaction();
+    await session.abortTransaction();
   } finally {
     // End the session
     session.endSession();
